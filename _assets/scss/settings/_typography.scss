@@ -1,7 +1,20 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../font/BebasNeue.eot"); /* IE9 */
+    src: url("../font/BebasNeue.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/BebasNeue.woff") format("woff"), /* chrome, firefox */
+    url("../font/BebasNeue.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../font/BebasNeue.svg#Bebas Neue") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
 $font-light:   'Montserrat', sans-serif;
 $font-regular: 'Montserrat', sans-serif;
 $font-italic:  'Montserrat', sans-serif;
-$font-bold:    'Oswald', sans-serif;
+$font-bold:    'Bebas Neue', sans-serif;
 $font-meta:    'Montserrat', sans-serif;
 
 // Typography
