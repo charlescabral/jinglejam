@@ -1,0 +1,75 @@
+$font-light:   'Montserrat', sans-serif;
+$font-regular: 'Montserrat', sans-serif;
+$font-italic:  'Montserrat', sans-serif;
+$font-bold:    'Oswald', sans-serif;
+$font-meta:    'Montserrat', sans-serif;
+
+// Typography
+$base-font-family:    $font-regular;
+$heading-font-family: $font-regular;
+$font-btn:            $font-regular;
+
+// Line height
+$base-line-height:    1.5;
+$heading-line-height: 1.2;
+
+// Font sizing
+@mixin fs-title {
+  line-height: 46px;
+  font-size:   42px;
+  font-family: $font-bold;
+  font-weight: 500;
+
+  @include media($mobile) {
+    font-size: 34px;
+    line-height: 36px;
+  }
+}
+
+@mixin fs-subtitle {
+  line-height: 22px;
+  font-size:   18px;
+  font-family: $font-meta;
+  font-weight: 500;
+}
+
+@mixin fs-headings {
+  font-weight: bold;
+  font-family: $font-bold;
+}
+
+@mixin fs-body {
+  line-height: 20px;
+  font-size:   18px;
+
+  @include media($mobile) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@mixin fs-meta {
+  font-size:   16px;
+  line-height: 18px;
+  font-family: $font-meta;
+  font-weight: 500;
+}
+
+@mixin fs-code {
+  font-family: $font-meta;
+  font-weight: 300;
+}
+
+@mixin fs-italic {
+  font-family: $font-italic;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin fs-small($align:'') {
+  font-size:   12px;
+  text-align: $align;
+  font-family: $font-meta;
+  font-weight: 500;
+  line-height: 14px;
+}

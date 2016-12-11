@@ -1,0 +1,8 @@
+footer.footer {
+  @include clearfix;
+  clear: both;
+  background-color: $c-light-primary;
+  height: 10vh;
+  @include fs-small(center);
+
+}

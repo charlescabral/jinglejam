@@ -1,0 +1,32 @@
+.col-brand {
+    @include span-columns(3);
+
+    .brand {
+        @include transition(fill, .5s);
+        @include size($nav-height);
+        padding: .8em;
+        border: 0;
+        background: none;
+        fill: $c-white;
+        display: block;
+    }
+}
+
+
+.header-nav {
+    width: 100%;
+    z-index: 10;
+    background-color: $c-dark-primary;
+    color: $c-white;
+    
+    .row {
+        padding: 0;
+        margin: 0;
+        @include clearfix;
+
+        @include media($tablet) {
+            margin-right: -$gutter;
+            margin-left: -$gutter;
+        }
+    }
+}
