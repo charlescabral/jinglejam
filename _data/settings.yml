@@ -2,29 +2,11 @@
 ## General Site Settings
 
 owner:
-  name: "Charles Cabral"
+  name: "Jingle Jam"
   email: charles.cabral.neto@gmail.com
-  bio: "Just another boring, musician, time traveling designer."
-  avatar: layout/travitar.jpg
-  disqus-shortname: Charles
-  social:
+  social:s
     - {icon: 'twitter', link: 'http://twitter.com/charlescabral'}
     - {icon: 'linkedin', link: 'http://www.linkedin.com/in/charlescabral/'}
-
-#-------------------------------
-# About Section
-skills:  
-- {name: Communication, value: '9'}
-- {name: Organization, value: '7'}
-- {name: Learning, value: '10'}
-- {name: Teaching, value: '6'}
-- {name: Planning, value: '7'}
-- {name: Visual Design, value: '10'}
-- {name: UX Design, value: '8'}
-- {name: Programming, value: '6'}
-#-------------------------------
-
-
 
 
 #-------------------------------
