@@ -1,7 +1,5 @@
 $(function() {
-    var form   = $( '#contact-form' );
-    var action = form.attr('action');
-    var alert  = $('.site-alert');
+    //https://ajax.microsoft.com/ajax/jquery.validate/1.15.1/additional-methods.js
 
     $.validator.addMethod( "lettersonly", function( value, element ) {
         return this.optional( element ) || /^[a-z]+$/i.test( value );
@@ -37,25 +35,16 @@ $(function() {
             }
         },
         submitHandler: function(form) {
-
-            form.submit(function(e) {
-                e.preventDefault();
-
-                NProgress.start();
-                var values = $(this).serialize();
-
-                $.post(action, values, function(data) {
-                    form.clearForm();
-                }, 'json').fail(function() {
+            NProgress.start();
+            $.ajax({
+                url: form.action,
+                type: form.method,
+                data: $(form).serialize(),
+                success: function(response) {
                     NProgress.done();
-                    alert.append('<div class="alert -success">Mensagem Enviada =]</div>');
-                    form.clearForm();
-                }).done(function() {
-                    NProgress.done();
-                    alert.append('<div class="alert -success">Mensagem Enviada =]</div>');
-                    form.clearForm();
-                });
-                return false
+                    alert.append('<div class="alert -success">Mensagem Enviada =]</div>').delay(3000).fadeOut();
+                    formulario.clearForm();
+                }            
             });
         }
     });

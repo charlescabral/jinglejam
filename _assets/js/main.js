@@ -3,7 +3,5 @@
 
 		$('#phone').mask(SPMaskBehavior, spOptions);
 
-
-
     });
 })(jQuery);
