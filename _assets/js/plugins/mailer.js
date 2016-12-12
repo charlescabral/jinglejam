@@ -36,6 +36,7 @@ $(function() {
         },
         submitHandler: function(form) {
             NProgress.start();
+            var alert = $('.site-alert');
             $.ajax({
                 url: form.action,
                 type: form.method,
@@ -43,7 +44,7 @@ $(function() {
                 success: function(response) {
                     NProgress.done();
                     alert.append('<div class="alert -success">Mensagem Enviada =]</div>').delay(3000).fadeOut();
-                    formulario.clearForm();
+                    $(form).clearForm();
                 }            
             });
         }
