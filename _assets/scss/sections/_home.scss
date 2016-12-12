@@ -367,6 +367,16 @@ section {
 			.button {
 				width: 100%;
 			}
+
+			.site-alert {
+				padding: $spacing 0;
+
+				.alert {
+					&.-success {
+						color: #58a76a;
+					}
+				}
+			}
 		}
 	}
 

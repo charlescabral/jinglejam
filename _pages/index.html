@@ -127,9 +127,10 @@ permalink: '/'
 			<span class="row form">
 				<form id="contact-form" action="//getsimpleform.com/messages?form_api_token=778aa5515cdca803c54ca7db3ecac951" method="post">
 					<input type='text' name='name' placeholder="NOME *" required/>
-					<input type='text' name='email' placeholder="EMAIL *" required/>
+					<input type='email' name='email' placeholder="EMAIL *" required/>
 					<input type='text' name='phone' placeholder="TELEFONE"/>
 					<input class="button -success -big send" type='submit' value='ENVIAR' />
+					<div class="site-alert"></div>
 				</form>
 			</span>
 		</div>
@@ -147,15 +148,3 @@ permalink: '/'
 		</div>
 	</div>
 </section>
-
-
-<div class="site-alert"></div>
-
-{% comment %}<div id="notifications">
-	<div class="alert alert-success">
-		<a class="button close" href="#">×</a>
-		<i class="fa fa-info-circle "></i> 
-		Sua mensagem foi enviada!
-	</div>
-</div>{% endcomment %}
-
