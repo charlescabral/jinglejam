@@ -364,14 +364,37 @@ section {
 			max-width: 262px;
 			margin: 0 auto;
 
+			input {
+				&.error {
+					margin-bottom: 14px;
+					border-color: $c-light-primary;
+				}
+				&.valid {
+					margin-bottom: 14px;
+					border-color: #58a76a;
+				}
+			}
+
 			.button {
 				width: 100%;
 			}
 
+			label.error {
+				height: 16px;
+				margin-top: -10px;
+				margin-bottom: 14px;
+				font-family: $font-regular;
+				color: $c-light-primary;
+				font-weight: lighter;
+				font-size: 12px;
+				display: block;
+				text-transform: right;
+			}
+
 			.site-alert {
-				padding: $spacing 0;
 
 				.alert {
+					padding: $spacing 0;
 					&.-success {
 						color: #58a76a;
 					}

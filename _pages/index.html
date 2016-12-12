@@ -125,12 +125,12 @@ permalink: '/'
 			<span class="row one">QUER FAZER PARTE?</span>
 			<span class="row two">DEIXE SEU EMAIL COM O <span class="accent">NOEL.</span></span>
 			<span class="row form">
-				<form id="contact-form" action="//getsimpleform.com/messages?form_api_token=778aa5515cdca803c54ca7db3ecac951" method="post">
-					<input type='text' name='name' placeholder="NOME *" required/>
-					<input type='email' name='email' placeholder="EMAIL *" required/>
-					<input id="phone" type='text' name='phone' placeholder="TELEFONE"/>
-					<input class="button -success -big send" type='submit' value='ENVIAR' />
-					<div class="site-alert"></div>
+				<form id="contact-form" name="contact" action="//getsimpleform.com/messages?form_api_token=3ae6c27587e8cc0b9bf81aa8eb3904ef" method="post">
+					<input type='text' name='name' placeholder="NOME *" id="name" data-rules="required" class="validate"/>
+					<input type='email' name='email' placeholder="EMAIL *" id="email" data-rules="required|valid_email" data-rules="Email" class="validate"/>
+					<input type='tel' name='phone' placeholder="TELEFONE" id="phone" data-rules="required|alpha_numeric" class="validate"/>
+					<button class="button -success -big send" type='submit' name="submit">ENVIAR</button>
+					<div class="error_box site-alert"></div>
 				</form>
 			</span>
 		</div>
