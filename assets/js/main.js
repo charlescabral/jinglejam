@@ -1,1 +1,1 @@
-!function(n){n(function(){})}(jQuery);
+!function(n){n(function(){n("#phone").mask(SPMaskBehavior,spOptions)})}(jQuery);
