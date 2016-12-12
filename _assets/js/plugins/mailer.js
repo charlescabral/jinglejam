@@ -17,7 +17,7 @@ $(function() {
             },
             phone: {
                 required: true,
-                minlength: 10,
+                minlength: 14,
             }
         },
         messages: {
