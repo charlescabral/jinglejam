@@ -15,20 +15,9 @@ layout: compress
 
         {% include head_svg.html %}
 
-        <main id="panel">
-
-            <header class="header-nav">
-                {% include header.html navclass='header' %}
-            </header>
-        
-            <section class="content">
-                {{content}}   
-            </section>
-
-            <footer class="footer">
-                {% include footer.html %}
-            </footer>
-        </main>
+        <div class="content">
+            {{content}}   
+        </div>
 
         {% include scripts.html %}
     </body>

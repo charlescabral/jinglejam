@@ -1,0 +1,404 @@
+section {
+	padding: $spacing*2 0;
+
+	&.intro {
+		.row {
+			margin-bottom: $spacing/4;
+
+			@include media($intern) {
+				margin-bottom: $spacing/8;			 	
+			}
+
+			&:last-child {margin-bottom: 0;}
+		}
+		.one {
+			font-size: 108px;
+		    height: 84px;
+		    line-height: 95px;
+
+		    @include media($intern) {
+				font-size: 57px;
+			    line-height: 53px;
+			    height: 46px;
+		    }
+		}
+		.two {
+			font-size: 164px;
+		    line-height: 142px;
+		    height: 126px;
+		    color: $c-light-primary;
+
+		    @include media($intern) {
+				font-size: 86px;
+			    line-height: 76px;
+			    height: 66px;
+		    }
+		}
+		.three {
+			font-size: 103px;
+			height: 83px;
+			line-height: 94px;
+
+			@include media($intern) {
+				font-size: 54px;
+			    line-height: 50px;
+			    height: 44px;
+		    }
+		}
+		.four {
+			font-size: 89px;
+		    height: 73px;
+		    line-height: 84px;
+		     color: $c-txt-primary;
+
+		     @include media($intern) {
+				font-size: 47px;
+			    line-height: 45px;
+			    height: 39px;
+		    }
+		}
+	}
+
+	&.event {
+		background-image: url('../img/layout/bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center top;
+		text-align: center;
+		padding-bottom: 0;
+		height: 637px;
+		
+		.brand {
+			display: block;
+			.edition {
+				display: block;
+				color: $c-white;
+				font-family: $font-regular;
+				font-size: 14px;
+				line-height: 16px;
+				height: 18px;
+				margin-bottom: 4px;
+			}
+		}
+
+		.tree {
+			margin-bottom: 23px;
+		}
+
+		.party {
+			@include size(152px);
+			display: block;
+			text-align: center;
+			color: $c-white;
+			margin: 0 auto;
+		}
+	}
+
+	&.date {
+
+		.one {
+			font-size: 115px;
+			height: 84px;
+			line-height: 95px;
+		}
+
+		.two {
+			font-size: 135px;
+			height: 102px;
+			line-height: 116px;
+			color: $c-light-primary;
+		}
+
+		.three {
+			font-family: $font-regular;
+			color: $c-light-primary;
+			font-size: 12px;
+			line-height: 14px;
+			display: block;
+			text-align: right;
+    		width: 195px;
+    		margin-bottom: $spacing/2;
+		}
+
+		.four {
+			font-family: $font-regular;
+			color: $c-txt-primary;
+			font-size: 14px;
+			line-height: 16px;
+			font-weight: bold;
+
+			&:hover {
+				color: $c-dark-secondary;
+			}
+		}
+	}
+
+	&.lineup {
+		text-align: center;
+		background-color: $c-dark-secondary;
+
+		.title {
+			color: $c-white;
+		}
+
+		.djs {
+
+			.dj {
+				display: inline-block;
+
+				.avatar {
+					display: block;
+					height: 178px;
+					width: 331px;
+					margin-top: 55px;
+					margin-bottom: 80px;
+					position: relative;
+
+					&:hover {
+						.soundcloud {
+							@include opacity(1);
+							bottom: -59px;
+						}
+
+						.image {
+							&:before {
+								top: -65px;
+							}
+						}
+					}
+
+					@include media($mobile) {
+						width: 280px;
+						height: 210px;
+					}
+
+					.image {
+						display: block;
+						
+						&:before {
+							@include transition-duration($base-duration);
+							@include svg(triangle);
+							position: absolute;
+							content: '';
+						    left: 0;
+						    right: 0;
+						    margin: 0 auto;
+						    top: -55px;
+						    z-index: 0;
+
+						    @include media($mobile) {
+								top: -76px;
+						    }
+						}
+
+						img {
+							width: 	100%;
+							height: auto;
+							position: relative;
+							z-index: 1;
+						}
+					}
+
+
+					.soundcloud {
+						@include transition-duration($base-duration);
+						@include opacity(0);
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: 0 auto;
+						bottom: 20%;
+
+						@include media($mobile) {
+							@include opacity(1);
+							bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.tickets {
+		text-align: center;
+
+		.title {
+			color: $c-dark-secondary;
+		}
+
+		.box-infos {
+			border-bottom: solid 1px lighten($c-light-primary, 20);
+			padding-bottom: $spacing;
+			margin-bottom: $spacing;
+			width: 286px;
+
+			&:last-child {
+				margin-bottom: 0;
+				padding-bottom: 0;
+				border:0; 
+			}
+		}
+
+		.one {
+			font-size: 80px;
+		    line-height: 72px;
+		    height: 64px;
+		    margin-bottom: 10px;
+
+		    &.big {
+				font-size: 65px;
+				line-height: 60px;
+				height: 53px;
+		    }
+		}
+
+		.two {
+			font-family: $font-regular;
+			font-size: 14px;
+			line-height: 16px;
+			color: $base-font-color;
+			margin-bottom: 10px;
+		}
+
+		.three {
+			font-family: $font-regular;
+			font-size: 14px;
+			line-height: 16px;
+			text-transform: uppercase;
+		}
+	}
+
+	&.vip {
+		background-color: $c-black;
+
+		.one {
+			margin-bottom: $spacing;
+			font-size: 46px;
+			line-height: 45px;
+			height: 39px;
+			color: $c-light-primary;
+
+			span {
+				color: $c-white;
+				font-size: 18px;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+
+		.two {
+			font-family: $font-regular;
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: $spacing/2;
+			color: $c-white;
+
+			&:hover {
+				color: $c-dark-secondary;
+			}
+
+			b {
+				display: block;
+			}
+		}
+	}
+
+	&.contact {
+
+		.one {
+			color: $c-dark-primary;
+			font-size: 44px;
+		    line-height: 42px;
+		    height: 37px;
+		}
+
+		.two {
+			color: $c-light-primary;
+			font-size: 29px;
+			line-height: 32px;
+			height: 26px;
+			margin-bottom: $spacing/2;
+
+			.accent {
+				color: $c-dark-secondary;
+			}
+		}
+
+		#contact-form {
+			max-width: 262px;
+			margin: 0 auto;
+
+			.button {
+				width: 100%;
+			}
+		}
+	}
+
+	&.footer {
+		background-color: $c-black;
+		position: relative;
+
+		@include media($mobile) {
+			text-align: center;
+		}
+
+		.coyote,
+		.paverkan {
+			@include transition-duration($base-duration);
+
+			&:hover {
+				@include opacity(.5);
+			}
+		}
+
+		.coyote {
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			top: $spacing*2;
+
+			@include media($mobile) {
+				position: relative;
+				display: block;
+				top: inherit;
+				margin-bottom: $spacing;
+			}
+		}
+
+		.paverkan {
+			float: right;
+			@include media($mobile) {
+				float: none;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.row {
+	display: block;
+	@include clearfix;
+	@include outer-container;
+}
+
+.title {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: $spacing;
+	display: block;
+}
+
+.box-infos {
+	@include clearfix;
+	font-family: $font-bold;
+	width: $s-intern;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	color: $c-dark-secondary;
+
+	@include media(max-width $s-intern) {
+		width: 100%;
+	}
+}

@@ -14,6 +14,7 @@
 	'helpers/sprite_svg',
 	'helpers/mixin_sprite',
 	'helpers/tooltip',
+	'helpers/nprogress',
 	'helpers/functional';
 
 // Generic         ---------------------------------------- //
@@ -32,11 +33,8 @@
 
 // Components      ---------------------------------------- //
 @import
-	'components/header',
-	'components/navigation',
-	'components/menu-mobile',
-	'components/footer';
+	'components/icons';
 
 // Pages           ---------------------------------------- //
 @import 
-	'pages/home';
+	'sections/home';

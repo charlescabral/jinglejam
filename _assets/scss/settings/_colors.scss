@@ -1,7 +1,7 @@
 // Basic Pallete
 $c-white:          #fff;
 $c-black-0:        #000;
-$c-black:          #161616;
+$c-black:          #333333;
 $c-gray:           #f2f2f2;
 $c-yellow:         #f7e646;
 
@@ -29,16 +29,16 @@ $c-soundcloud:     #ff3a00;
 $c-github:         #2C2C2C;
 // layout
 
-$c-dark-primary:   #303030;
-$c-dark-secondary: #f7941e;
-$c-light-primary:  #E6E6E6;
-$c-txt-primary:    #161616;
-$c-txt-light:      #848484;
-$c-action-color:   #3b5998;
-$base-font-color:  #333333;
+$c-dark-primary:   #333333;
+$c-dark-secondary: #AE4157;
+$c-light-primary:  #EF5A72;
+$c-txt-primary:    #DA546F;
+$c-txt-light:      #808080;
+$c-action-color:   #A72958;
+$base-font-color:  #808080;
 $c-alert-error:    #ef4c53;
 $c-alert-watch:    $c-dark-secondary;
-$c-alert-success:  #26a749;
+$c-alert-success:  $c-light-primary;
 
 
 

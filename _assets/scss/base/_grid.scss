@@ -1,6 +1,6 @@
 $mobile:  new-breakpoint(max-width $s-m, 4); 
 $tablet:  new-breakpoint(max-width $s-t, 8); 
-$article:  new-breakpoint(max-width $s-article, 8); 
+$intern:  new-breakpoint(max-width $s-intern, 4); 
 $desktop: new-breakpoint(min-width $s-d, 12);
 
 body {
@@ -26,13 +26,8 @@ body {
 
 .content { 
 	@include clearfix;
-   	height: 90vh;
     background-color: $c-white;
-    // padding-bottom: $spacing;
-
-    @include media($article) {
-       padding-bottom: ($spacing/3);
-    }
+    // padding-bottom: $sp
 }
 
 .full-container { @include outer-container(100%); }

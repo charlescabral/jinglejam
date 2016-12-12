@@ -52,13 +52,8 @@ $heading-line-height: 1.2;
 }
 
 @mixin fs-body {
-  line-height: 20px;
+  line-height: inherit;
   font-size:   18px;
-
-  @include media($mobile) {
-    font-size: 16px;
-    line-height: 16px;
-  }
 }
 
 @mixin fs-meta {

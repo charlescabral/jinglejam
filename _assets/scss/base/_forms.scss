@@ -28,13 +28,13 @@ select {
   @include border-radius($base-border-radius);
   @include box-sizing(border-box);
   @include appearance(none);
-  @include fs-body;
+  font-size: 14px;
   background: $c-white;
   background-color: $base-background-color;
   border: $base-border;
   font-family: $base-font-family;
   margin-bottom: $small-spacing;
-  padding: em(10px);
+  padding: $small-spacing;
   width: 100%;
   @include appearance(none);
 

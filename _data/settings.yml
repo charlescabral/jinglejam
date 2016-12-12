@@ -10,7 +10,15 @@ owner:
 
 
 
-
+djs:  
+- {name: 'OLSEN [LouLou Records/MAZE]' , slug: olsen, link: 'https://soundcloud.com/olsenneto'}
+- {name: 'D.O.P.E', slug: dope, link: 'http://paverkan.onelabs.me/jinglejam/'}
+- {name: 'Pan.tufo', slug: pan-tufo, link: ''}
+- {name: 'JU URIZZI [House of Stage]', slug: ju-urizzi, link: 'https://soundcloud.com/juurizzi'}
+- {name: 'THI MARQUES [Coyote Crew]', slug: thi-marques, link: 'https://soundcloud.com/thi-marques'}
+- {name: 'FRANCISCO A. [Coyote Crew]', slug: francisco-a, link: 'https://soundcloud.com/francisco-arranz'}
+- {name: 'LUCAS EROLES', slug: lucas-eroles, link: 'https://soundcloud.com/lucaseroles'}
+- {name: 'LÉO ØLIVEIRA [Balearic]', slug: leo-oliveira, link: 'https://soundcloud.com/leooliverradj'}
 
 
 #-------------------------------

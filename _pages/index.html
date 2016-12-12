@@ -4,17 +4,158 @@ title: Site em construção
 permalink: '/'
 ---
 
-<div class="table construct">
-	<div class="table-cell">
-		<div class="container">
-			<div><svg class="ico"><use xlink:href="#learning"></use></svg> Site em construção</div>
+
+<section class="intro">
+	<div class="container">
+		<div class="box-infos">
+			<span class="row f-r one">DEPOIS DA CEIA</span>
+			<span class="row f-r two">DE NATAL,</span>
+			<span class="row f-r three">GUARDE ESPAÇO</span>
+			<span class="row f-r four">PARA SOBREMESA.</span>
 		</div>
 	</div>
-</div>
+</section>
+
+<section class="event">
+	<div class="container">
+
+		<div class="box-infos">
+			
+			<span class="brand">
+				<i class="jingle-jam"></i>
+				<span class="edition">3ª edição</span>
+			</span>
+
+			<i class="tree"></i>
+
+			<span class="party">
+				<div class="table">
+					<div class="table-cell">
+						<div>
+							christmas<br>
+							private<br>
+							party
+						</div>
+					</div>
+				</div>
+			</span>
+		</div>
+
+	</div>
+</section>
+
+<section class="date">
+	<div class="container">
+		<div class="box-infos">
+			<span class="row one">25.12</span>
+			<span class="row two">1.AM</span>
+			<span class="row three">APÓS A CEIA</span>
+			<a class="row four" href="https://goo.gl/maps/2xYJ2kzJa1x" target="_blank">
+				LOCAL: THEKILLA<br>
+				RUA VICTÓRIO PARTÊNIO<br>
+				57,MOGI DAS CRUZES
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="lineup">
+	<div class="container">
+		<span class="title">Line-up</span>
+		<ul class="djs">
+			{% for dj in site.data.settings.djs %}
+
+				<li class="dj">
+					<a target="_blank" title="{{ dj.name }}" href="{{ dj.link }}" class="avatar">
+						<i class="image">
+							<img src="assets/img/djs/{{ dj.slug }}.png" alt="{{ dj.name }}">
+						</i>
+						<i class="soundcloud"></i>
+					</a>
+				</li>
+
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+<section class="tickets">
+	<div class="container">
+
+		<span class="title">PONTOS DE RETIRADA</span>
+
+		<a target="_blank" href="https://goo.gl/maps/kkA3Kmt6R1D2" class="box-infos">
+			<span class="row one">STUDIO ECO</span>
+			<span class="row three">
+				R. EMÍLIO ZAPILE, 872 - VILA OLIVEIRA<br>
+				MOGI DAS CRUZES - SP
+			</span>
+		</a>
+
+		<a target="_blank" href="https://goo.gl/maps/6pRjUSc2vaR2" class="box-infos">
+			<span class="row one big">TOKIO GROOVE</span>
+			<span class="row two">Temakeria & Sushibar</span>
+			<span class="row three">
+				R. MANUEL DE OLIVEIRA, 269 - VILA<br>
+				MOGILAR MOGI DAS CRUZES - SP
+			</span>
+		</a>
+	</div>
+</section>
+
+<section class="vip">
+	<div class="container">
+		<div class="box-infos">
+			<span class="row one">RSVP <span>e</span> CAMAROTES</span>
+			<a href="tel:(11) 9.8325-4432" class="row two">
+				<b>MÁRIO ARGENTINO</b>
+				(11) 9.8325-4432
+			</a>
+			<a href="tel:(11) 9.8325-4432" class="row two">
+				<b>JU URIZZI</b>
+				(11) 9.4216-2266
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="contact">
+	<div class="container">
+		<div class="box-infos">
+			<span class="row one">QUER FAZER PARTE?</span>
+			<span class="row two">DEIXE SEU EMAIL COM O <span class="accent">NOEL.</span></span>
+			<span class="row form">
+				<form id="contact-form" action="//getsimpleform.com/messages?form_api_token=3ae6c27587e8cc0b9bf81aa8eb3904ef" method="post">
+					<input type='text' name='name' placeholder="NOME *" required/>
+					<input type='text' name='email' placeholder="EMAIL *" required/>
+					<input type='text' name='phone' placeholder="TELEFONE"/>
+					<input class="button -success -big send" type='submit' value='ENVIAR' />
+				</form>
+			</span>
+		</div>
+	</div>
+</section>
 
 
 
 
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<a target="_blank" href="https://soundcloud.com/netoreple" class="coyote" title="Coyote Crew"></a>
+			<a target="_blank" href="http://paverkan.com.br/" class="paverkan" title="Paverkan - Marketing e Inovação"></a>
+		</div>
+	</div>
+</section>
 
 
+<div class="site-alert"></div>
+
+{% comment %}<div id="notifications">
+	<div class="alert alert-success">
+		<a class="button close" href="#">×</a>
+		<i class="fa fa-info-circle "></i> 
+		Sua mensagem foi enviada!
+	</div>
+</div>{% endcomment %}
 
