@@ -2,6 +2,13 @@ section {
 	padding: $spacing*2 0;
 
 	&.intro {
+
+		.box-infos {
+			@include media($intern) {
+				width: 274px;
+			}
+		}
+
 		.row {
 			margin-bottom: $spacing/4;
 
@@ -11,6 +18,7 @@ section {
 
 			&:last-child {margin-bottom: 0;}
 		}
+
 		.one {
 			font-size: 108px;
 		    height: 84px;
@@ -27,6 +35,23 @@ section {
 		    line-height: 142px;
 		    height: 126px;
 		    color: $c-light-primary;
+		    position: relative;
+
+		    .tree-svg {
+				position: absolute;
+				bottom: 36px;
+				right: 0;
+				width: 52px;
+				height: 60px;
+
+				svg {float: left;}
+
+				@include media($intern) {
+					bottom: 15px;
+					width: 27px;
+					height: 40px;
+				}
+		    }
 
 		    @include media($intern) {
 				font-size: 86px;
@@ -166,9 +191,21 @@ section {
 						}
 					}
 
-					@include media($mobile) {
+					@include media($intern) {
 						width: 280px;
 						height: 210px;
+
+						&:hover {
+							.soundcloud {
+								bottom: 0;
+							}
+
+							.image {
+								&:before {
+									top: -76px;
+								}
+							}
+						}
 					}
 
 					.image {
@@ -185,7 +222,7 @@ section {
 						    top: -55px;
 						    z-index: 0;
 
-						    @include media($mobile) {
+						    @include media($intern) {
 								top: -76px;
 						    }
 						}
@@ -208,7 +245,7 @@ section {
 						margin: 0 auto;
 						bottom: 20%;
 
-						@include media($mobile) {
+						@include media($intern) {
 							@include opacity(1);
 							bottom: 0;
 						}
@@ -337,7 +374,7 @@ section {
 		background-color: $c-black;
 		position: relative;
 
-		@include media($mobile) {
+		@include media($tablet) {
 			text-align: center;
 		}
 
@@ -357,7 +394,7 @@ section {
 			margin: 0 auto;
 			top: $spacing*2;
 
-			@include media($mobile) {
+			@include media($tablet) {
 				position: relative;
 				display: block;
 				top: inherit;
@@ -367,7 +404,7 @@ section {
 
 		.paverkan {
 			float: right;
-			@include media($mobile) {
+			@include media($tablet) {
 				float: none;
 				display: inline-block;
 			}
